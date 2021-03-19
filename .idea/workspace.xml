@@ -2,24 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d979c69-898a-4712-9013-a746a7acb275" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/dataset/mnist_data/MNIST/processed/test.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/mnist_data/MNIST/processed/training.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/mnist_data/MNIST/raw/t10k-images-idx3-ubyte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/mnist_data/MNIST/raw/t10k-images-idx3-ubyte.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/mnist_data/MNIST/raw/t10k-labels-idx1-ubyte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/mnist_data/MNIST/raw/t10k-labels-idx1-ubyte.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/mnist_data/MNIST/raw/train-images-idx3-ubyte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/mnist_data/MNIST/raw/train-images-idx3-ubyte.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/mnist_data/MNIST/raw/train-labels-idx1-ubyte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dataset/mnist_data/MNIST/raw/train-labels-idx1-ubyte.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/draw_result.py" beforeDir="false" afterPath="$PROJECT_DIR$/draw_result.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/active_BLR.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/active_BLR.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/active_BRR.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/active_BRR.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plot_correlation.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_correlation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BDNN/BDNN_LOSS_MNIST.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BDNN/BDNN_MSE_MNIST.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BDNN/BDNN_accuracy_MNIST.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BDNN/BDNN_correlation_MNIST.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/result/BDNN/BDNN_epsilon.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/result/BDNN/BDNN_epsilon_MNIST.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/BDNN/BDNN_epsilon_MNIST.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BDNN/BDNN_gene_error.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/result/BDNN/BDNN_gene_error_MNIST.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/BDNN/BDNN_gene_error_MNIST.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BDNN/BDNN_upper_bound_MNIST.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BDNN/R_lower.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BDNN/R_upper.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BDNN/accuracy.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/result/BDNN/backup/BDNN_LOSS_MNIST.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/result/BDNN/backup/BDNN_MSE_MNIST.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/result/BDNN/backup/BDNN_accuracy_MNIST.pdf" beforeDir="false" />
@@ -38,13 +39,6 @@
       <change beforePath="$PROJECT_DIR$/result/BDNN/backup/stop_timings_azuma2.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/result/BDNN/backup/stop_timings_azuma3.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/result/BDNN/corr.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/BDNN/corr.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BDNN/lambda.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BDNN/loss.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BDNN/mse.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BDNN/stop_timings_azuma.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BDNN/stop_timings_azuma1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BDNN/stop_timings_azuma2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BDNN/stop_timings_azuma3.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/result/BLR/BLR_correlation_HTRU2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/BLR/BLR_correlation_HTRU2.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/BLR/BLR_correlation_grid_stability_c.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/BLR/BLR_correlation_grid_stability_c.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/BLR/BLR_correlation_skin.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/BLR/BLR_correlation_skin.pdf" afterDir="false" />
@@ -193,8 +187,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run_BDNN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3555">
-              <caret line="237" lean-forward="true" selection-start-line="237" selection-end-line="237" />
+            <state relative-caret-position="375">
+              <caret line="39" column="50" lean-forward="true" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -228,8 +222,8 @@
         <option value="$PROJECT_DIR$/run_BRR.py" />
         <option value="$PROJECT_DIR$/run_BLR.py" />
         <option value="$PROJECT_DIR$/run_GPR.py" />
-        <option value="$PROJECT_DIR$/run_BDNN.py" />
         <option value="$PROJECT_DIR$/draw_result.py" />
+        <option value="$PROJECT_DIR$/run_BDNN.py" />
       </list>
     </option>
   </component>
@@ -459,12 +453,12 @@
     <frame x="0" y="23" width="1680" height="958" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.123931624" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.123931624" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32794458" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32794458" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -647,8 +641,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/run_BDNN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3555">
-          <caret line="237" lean-forward="true" selection-start-line="237" selection-end-line="237" />
+        <state relative-caret-position="375">
+          <caret line="39" column="50" lean-forward="true" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
