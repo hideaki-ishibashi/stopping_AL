@@ -71,28 +71,6 @@ class max_confidence_criterion(base_criterion):
                 self.stop_flags = True
 
 
-class PAC_criterion(base_criterion):
-    def __init__(self,epsilon,threshold):
-        super(PAC_criterion, self).__init__("PAC")
-        self.convergence_prob = np.empty(0, float)
-        self.threshold = threshold
-        self.epsilon = epsilon
-        self.upper_bound = np.empty(0, float)
-
-    def check_threshold(self,KL,train_error,current_time):
-        # epsilonをepsilon+Cで定義
-        delta = 1 - np.exp((current_time+1)*(train_error - self.epsilon) + KL)
-        self.convergence_prob = np.append(self.convergence_prob,delta)
-        if self.convergence_prob[current_time] >= self.threshold and not self.stop_flags:
-            self.stop_timings = current_time
-            print("{} : {}".format(self.criterion_name,current_time))
-            self.stop_flags = True
-
-    def calc_upper_bound(self,KL,train_error,const,delta,current_time):
-        upper_bound = train_error + (KL-np.log(delta))/(current_time+1) + const
-        self.upper_bound = np.append(self.upper_bound,upper_bound)
-
-
 class run_criterion(base_criterion):
     def __init__(self,length,threshold,start_time):
         super(run_criterion, self).__init__("Run")

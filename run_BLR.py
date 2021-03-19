@@ -9,12 +9,12 @@ from tqdm import tqdm
 import os
 
 def main():
-    np.random.seed(2)
-    random.seed(2)
+    np.random.seed(1)
+    random.seed(1)
     data_names = ["grid_stability_c","skin","HTRU2"]
     corr_list = np.zeros((len(data_names)))
 
-    C_list = [200,0.0001,1]
+    C_list = [100,0.001,1]
     fontsize = 24
 
     for i,data_name in enumerate(data_names):
@@ -45,9 +45,9 @@ def main():
         blr = active_BLR(basis_size=basis_size,x_range=x_range,C=C_list[i],solver="newton-cg")
 
         validate_size = 10
-        threshold = 0.3
-        error_stability1 = error_stability_criterion(threshold,validate_size)
         threshold = 0.2
+        error_stability1 = error_stability_criterion(threshold,validate_size)
+        threshold = 0.15
         error_stability2 = error_stability_criterion(threshold,validate_size)
         threshold = 0.1
         error_stability3 = error_stability_criterion(threshold,validate_size)

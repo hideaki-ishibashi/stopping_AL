@@ -15,9 +15,21 @@ def draw_gene_error(test_error,criteria,color,fontsize=24,isLegend=True):
     if isLegend:
         plt.legend(fontsize=fontsize)
     plt.xlabel("data size",fontsize=fontsize)
-    plt.ylabel("expected generalization error",fontsize=fontsize)
+    plt.ylabel("generalization error",fontsize=fontsize)
     plt.tick_params(labelsize=fontsize)
     plt.pause(0.01)
+# def draw_gene_error(test_error,stopping_timings,color,thresholds,fontsize=24):
+#     plt.figure(1,[8,5])
+#     plt.clf()
+#     plt.plot(range(1,test_error.shape[0]+1), test_error, c='k', label="generalization_error")
+#     for i,stopping_timing in enumerate(stopping_timings):
+#         plt.plot([stopping_timing, stopping_timing], [test_error.min(), test_error.max()], c=color[i],
+#              linestyle="dashed", label=r"$\lambda={0}$".format(thresholds[i]))
+#     plt.legend(fontsize=fontsize)
+#     plt.xlabel("data size",fontsize=fontsize)
+#     plt.ylabel("generalization error",fontsize=fontsize)
+#     plt.tick_params(labelsize=fontsize)
+#     plt.pause(0.01)
 
 
 def draw_result_list(result,y_label,data_names,color,label,fontsize=24,ylim=1):
@@ -59,6 +71,21 @@ def draw_epsilon(criteria,color,fontsize=24,isLegend=True):
     plt.tick_params(labelsize=fontsize)
     plt.pause(0.01)
 
+# def draw_epsilon(criterion,color,thresholds,fontsize=24,isLegend=True):
+#     plt.figure(3,[8,5])
+#     plt.clf()
+#     plt.ylim(-0.1, 1.1)
+#     plt.plot(range(1, criterion.shape[0] + 1), criterion, c="k",label="Error ratio")
+#     for i,threshold in enumerate(thresholds):
+#         plt.plot([1, criterion.shape[0]+1], [threshold, threshold], c=color[i],label=r"$\lambda={0}$".format(threshold))
+#         # plt.plot([criterion.stop_timings, criterion.stop_timings], [0, criterion.criterion.max()], c=color[criterion.criterion_name],linestyle="dashed")
+#     if isLegend:
+#         plt.legend(fontsize=fontsize)
+#     plt.xlabel("data size",fontsize=fontsize)
+#     plt.ylabel("error ratio",fontsize=fontsize)
+#     plt.tick_params(labelsize=fontsize)
+#     plt.pause(0.01)
+
 
 def draw_correlation(test_error,criterion,label,color="k",fontsize=24,isLegend=True):
     plt.figure(4,[8,8])
@@ -67,7 +94,7 @@ def draw_correlation(test_error,criterion,label,color="k",fontsize=24,isLegend=T
     plt.scatter(test_error[indecies],criterion[indecies],c=color,label=label)
     if isLegend:
         plt.legend(fontsize=fontsize)
-    plt.xlabel("expected generalization error",fontsize=fontsize)
+    plt.xlabel("generalization error",fontsize=fontsize)
     plt.ylabel("error ratio",fontsize=fontsize)
     plt.tick_params(labelsize=fontsize)
     plt.tight_layout()

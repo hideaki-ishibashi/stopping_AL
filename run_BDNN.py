@@ -54,6 +54,7 @@ test_batch_size = args.test_batch_size
 lr = args.lr
 p = args.p
 
+save_dir = "result/BDNN/"
 scheduling = eval(args.scheduling)
 num_class = 10
 
@@ -213,38 +214,29 @@ for r in range(args.round):
     train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=train_batch_size, shuffle=True)
     print('Selection: {}, Round: {}, Size: {}'.format(args.selection, r + 1, len(train_loader.dataset)))
 
-draw_result.draw_accuracy(test_accs_list, criteria, color,args.acquisition_size)
+draw_result.draw_gene_error(test_loss_list, criteria, color,args.acquisition_size)
 plt.tight_layout()
-plt.savefig("result/BDNN_accuracy_MNIST.pdf")
-draw_result.draw_mse(test_mses_list, criteria, color,args.acquisition_size)
-plt.tight_layout()
-plt.savefig("result/BDNN_MSE_MNIST.pdf")
-draw_result.draw_loss(test_loss_list, criteria, color,args.acquisition_size)
-plt.tight_layout()
-plt.savefig("result/BDNN_LOSS_MNIST.pdf")
-draw_result.draw_upper_bound(criteria, color,args.acquisition_size)
-plt.tight_layout()
-plt.savefig("result/BDNN_upper_bound_MNIST.pdf")
+plt.savefig(save_dir+"BDNN_gene_error_MNIST.pdf")
 draw_result.draw_epsilon(criteria, color,args.acquisition_size)
 plt.tight_layout()
-plt.savefig("result/BDNN_epsilon_MNIST.pdf")
+plt.savefig(save_dir+"BDNN_epsilon_MNIST.pdf")
 
 indecies = utils.calc_min_list(error_stability1.criterion)
 corr = np.corrcoef(test_loss_list[indecies], error_stability1.criterion[indecies])[1, 0]
-np.savetxt("result_data/corr.txt",np.array([corr]))
+np.savetxt(save_dir+"corr.txt",np.array([corr]))
 
 print(test_loss_list[indecies].shape)
 print(error_stability1.criterion[indecies].shape)
-draw_result.draw_correlation(test_loss_list, criteria,indecies,"purple")
+draw_result.draw_correlation(test_loss_list, criteria[0],indecies,"purple")
 plt.tight_layout()
-plt.savefig("result/BDNN_correlation_MNIST.pdf")
+plt.savefig(save_dir+"BDNN_correlation_MNIST.pdf")
 
-np.savetxt("result_data/accuracy.txt",np.array(test_accs_list))
-np.savetxt("result_data/mse.txt",np.array(test_mses_list))
-np.savetxt("result_data/loss.txt",np.array(test_loss_list))
-np.savetxt("result_data/lambda.txt",error_stability1.criterion)
-np.savetxt("result_data/R_upper.txt",error_stability1.R_upper)
-np.savetxt("result_data/R_lower.txt",error_stability1.R_lower)
-np.savetxt("result_data/stop_timings_azuma1.txt",np.array([error_stability1.stop_timings]))
-np.savetxt("result_data/stop_timings_azuma2.txt",np.array([error_stability2.stop_timings]))
-np.savetxt("result_data/stop_timings_azuma3.txt",np.array([error_stability3.stop_timings]))
+np.savetxt(save_dir+"accuracy.txt",np.array(test_accs_list))
+np.savetxt(save_dir+"mse.txt",np.array(test_mses_list))
+np.savetxt(save_dir+"loss.txt",np.array(test_loss_list))
+np.savetxt(save_dir+"lambda.txt",error_stability1.criterion)
+np.savetxt(save_dir+"R_upper.txt",error_stability1.R_upper)
+np.savetxt(save_dir+"R_lower.txt",error_stability1.R_lower)
+np.savetxt(save_dir+"stop_timings_azuma1.txt",np.array([error_stability1.stop_timings]))
+np.savetxt(save_dir+"stop_timings_azuma2.txt",np.array([error_stability2.stop_timings]))
+np.savetxt(save_dir+"stop_timings_azuma3.txt",np.array([error_stability3.stop_timings]))

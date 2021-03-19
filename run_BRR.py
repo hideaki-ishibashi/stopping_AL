@@ -9,8 +9,8 @@ import random
 import os
 
 def main():
-    np.random.seed(3)
-    random.seed(3)
+    np.random.seed(1)
+    random.seed(1)
     data_names = ["power_plant","protein","gas_emission","grid_stability"]
     data_sizes = [2000,2000,1000,8000]
     corr_list = np.zeros((len(data_names)))
@@ -37,11 +37,14 @@ def main():
         brr = active_BRR(beta=0.1,alpha=1.0,basis_size=basis_size,x_range=x_range)
         brr.fit(X_train[:sample_size],y_train[:sample_size],fix_hyper_param=False)
         validate_size = 10
-        threshold = 0.02
+        # threshold = 0.02
+        threshold = 0.05
         error_stability1 = error_stability_criterion(threshold,validate_size)
-        threshold = 0.015
+        threshold = 0.04
+        # threshold = 0.015
         error_stability2 = error_stability_criterion(threshold,validate_size)
-        threshold = 0.01
+        threshold = 0.03
+        # threshold = 0.01
         error_stability3 = error_stability_criterion(threshold,validate_size)
         criteria = [error_stability1,error_stability2,error_stability3]
 

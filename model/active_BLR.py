@@ -3,6 +3,7 @@ from tqdm import tqdm
 import random
 import utils
 from sklearn.linear_model import LogisticRegression
+from scipy.special import xlogy
 
 class active_BLR(LogisticRegression):
     def __init__(self, *args, basis_size=10, x_range, **kwargs):
@@ -20,7 +21,7 @@ class active_BLR(LogisticRegression):
 
     def get_entropy(self,X_ast):
         pos = self.predict_proba(X_ast)
-        entropy = -(pos * np.log(pos)).sum(axis=1)
+        entropy = -(xlogy(pos,pos)).sum(axis=1)
         return entropy
 
     def fit(self,X,y,init_W = None,sample_weight=None):
