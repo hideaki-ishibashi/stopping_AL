@@ -1,7 +1,6 @@
 # stopping Active Learning
 
-This is the code for our paper 
-[]().
+This is the code for our paper [Error Stability-based stopping criterion for active learning]().
 
 Please cite us:
 
