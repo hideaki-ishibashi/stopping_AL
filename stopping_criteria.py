@@ -14,7 +14,7 @@ class base_criterion(object):
 class error_stability_criterion(base_criterion):
     def __init__(self,threshold,validate_size=10):
         super(error_stability_criterion, self).__init__("Error stability={0}".format(threshold))
-        self.criterion = np.empty(0,float)
+        self.error_ratio = np.empty(0,float)
         self.threshold = threshold
         self.validate_size = validate_size
         self.KL_pq = np.empty(0, float)
@@ -41,16 +41,16 @@ class error_stability_criterion(base_criterion):
         self.R_lower = np.append(self.R_lower,(np.exp(Lambda_lower) - 1))
         self.R = np.append(self.R,self.R_upper[-1] + self.R_lower[-1])
         if self.validate_size <= current_time:
-            criterion = self.R[-1] / self.R[:self.validate_size+1].min()
+            error_ratio = self.R[-1] / self.R[:self.validate_size+1].min()
             if self.validate_size == current_time:
-                criterion = 1
-            self.criterion = np.append(self.criterion,criterion)
-            if self.criterion[-1] <= self.threshold and not self.stop_flags:
+                error_ratio = 1
+            self.error_ratio = np.append(self.error_ratio,error_ratio)
+            if self.error_ratio[-1] <= self.threshold and not self.stop_flags:
                 self.stop_timings = current_time
                 print("{} : {}".format(self.criterion_name, current_time))
                 self.stop_flags = True
         else:
-            self.criterion = np.append(self.criterion, 1)
+            self.error_ratio = np.append(self.error_ratio, 1)
 
 
 class max_confidence_criterion(base_criterion):

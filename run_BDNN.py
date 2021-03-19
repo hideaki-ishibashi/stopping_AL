@@ -10,6 +10,7 @@ import matplotlib.pylab as plt
 import draw_result
 from batch_bald import multi_bald
 import utils
+import os
 
 
 parser = argparse.ArgumentParser(description='Bayesian batch active learning as sparse subset approximation')
@@ -55,12 +56,16 @@ lr = args.lr
 p = args.p
 
 save_dir = "result/BDNN/"
+os.makedirs(save_dir, exist_ok=True)
+data_dir = "dataset/mnist_data/"
+os.makedirs(data_dir, exist_ok=True)
 scheduling = eval(args.scheduling)
 num_class = 10
+font_size = 24
 
 
 def generate_full_dataset():
-    return datasets.MNIST('./dataset/mnist_data', train=True, download=True,
+    return datasets.MNIST(data_dir, train=True, download=True,
                           transform=transforms.Compose([transforms.ToTensor()]))
 
 
@@ -79,7 +84,7 @@ print('md5 of initial data points: {}'.format(hashlib.md5(str(indices).encode('u
 train_dataset = modify_dataset(train_dataset, indices)
 train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=train_batch_size, shuffle=True)
 
-test_dataset = datasets.MNIST('./dataset/mnist_data', train=False,transform=transforms.Compose([transforms.ToTensor(),]))
+test_dataset = datasets.MNIST(data_dir, train=False,transform=transforms.Compose([transforms.ToTensor(),]))
 test_indices = np.random.RandomState(seed=args.seed).permutation(len(test_dataset))[:args.test_size]
 test_dataset = modify_dataset(test_dataset, test_indices)
 test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=test_batch_size, shuffle=False)
@@ -214,27 +219,27 @@ for r in range(args.round):
     train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=train_batch_size, shuffle=True)
     print('Selection: {}, Round: {}, Size: {}'.format(args.selection, r + 1, len(train_loader.dataset)))
 
-draw_result.draw_gene_error(test_loss_list, criteria, color,args.acquisition_size)
+draw_result.draw_gene_error(test_loss_list, criteria, args.initial_size, args.acquisition_size, color, font_size)
 plt.tight_layout()
 plt.savefig(save_dir+"BDNN_gene_error_MNIST.pdf")
-draw_result.draw_epsilon(criteria, color,args.acquisition_size)
+draw_result.draw_epsilon(criteria, args.initial_size, args.acquisition_size, color,font_size)
 plt.tight_layout()
 plt.savefig(save_dir+"BDNN_epsilon_MNIST.pdf")
 
-indecies = utils.calc_min_list(error_stability1.criterion)
-corr = np.corrcoef(test_loss_list[indecies], error_stability1.criterion[indecies])[1, 0]
+indecies = utils.calc_min_list(error_stability1.error_ratio)
+corr = np.corrcoef(test_loss_list[indecies], error_stability1.error_ratio[indecies])[1, 0]
 np.savetxt(save_dir+"corr.txt",np.array([corr]))
 
 print(test_loss_list[indecies].shape)
-print(error_stability1.criterion[indecies].shape)
-draw_result.draw_correlation(test_loss_list, criteria[0],indecies,"purple")
+print(error_stability1.error_ratio[indecies].shape)
+draw_result.draw_correlation(test_loss_list, error_stability1.error_stability,indecies,"purple")
 plt.tight_layout()
 plt.savefig(save_dir+"BDNN_correlation_MNIST.pdf")
 
 np.savetxt(save_dir+"accuracy.txt",np.array(test_accs_list))
 np.savetxt(save_dir+"mse.txt",np.array(test_mses_list))
 np.savetxt(save_dir+"loss.txt",np.array(test_loss_list))
-np.savetxt(save_dir+"lambda.txt",error_stability1.criterion)
+np.savetxt(save_dir+"lambda.txt",error_stability1.error_ratio)
 np.savetxt(save_dir+"R_upper.txt",error_stability1.R_upper)
 np.savetxt(save_dir+"R_lower.txt",error_stability1.R_lower)
 np.savetxt(save_dir+"stop_timings_azuma1.txt",np.array([error_stability1.stop_timings]))

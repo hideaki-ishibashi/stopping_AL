@@ -16,6 +16,7 @@ def main():
 
     C_list = [100,0.001,1]
     fontsize = 24
+    batch_size = 1
 
     for i,data_name in enumerate(data_names):
         save_dir = "result/BLR/"
@@ -76,18 +77,18 @@ def main():
             error_stability2.check_threshold(KL_pq, KL_qp, e)
             error_stability3.check_threshold(KL_pq, KL_qp, e)
 
-        draw_result.draw_gene_error(test_error, criteria, color, fontsize)
+        draw_result.draw_gene_error(test_error, criteria, init_sample_size,batch_size,color, fontsize)
         plt.tight_layout()
         plt.savefig(save_dir + "BLR_gene_error_" + data_name + ".pdf")
-        draw_result.draw_correlation(test_error[validate_size:], error_stability1.criterion[validate_size:], "BLR",  "b", fontsize)
+        draw_result.draw_correlation(test_error[validate_size:], error_stability1.error_ratio[validate_size:], "BLR",  "b", fontsize)
         plt.tight_layout()
         plt.savefig(save_dir + "BLR_correlation_" + data_name + ".pdf")
-        draw_result.draw_epsilon(criteria, color, fontsize)
+        draw_result.draw_epsilon(criteria, init_sample_size,batch_size,color, fontsize)
         plt.tight_layout()
         plt.savefig(save_dir + "BLR_criterion_" + data_name + ".pdf")
 
-        indecies = utils.calc_min_list(error_stability1.criterion[validate_size:])
-        corr_list[i] = np.corrcoef(test_error[validate_size:][indecies], error_stability1.criterion[validate_size:][indecies])[1, 0]
+        indecies = utils.calc_min_list(error_stability1.error_ratio[validate_size:])
+        corr_list[i] = np.corrcoef(test_error[validate_size:][indecies], error_stability1.error_ratio[validate_size:][indecies])[1, 0]
 
     np.savetxt(save_dir+"corr_list.txt", corr_list)
 

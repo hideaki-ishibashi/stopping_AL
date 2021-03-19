@@ -10,7 +10,7 @@ class active_BLR(LogisticRegression):
         super().__init__(*args, **kwargs)
         self.basis_size = basis_size
         self.x_range = x_range
-        self.basis_func = self.Additive_RBF_function
+        self.basis_func = self.additive_RBF_function
         print(self.C)
 
 
@@ -51,7 +51,7 @@ class active_BLR(LogisticRegression):
         self.S = np.linalg.inv(H)
         return [self.W,self.S]
 
-    def Additive_RBF_function(self,inputs):
+    def additive_RBF_function(self,inputs):
         [node, step] = np.linspace(self.x_range[0], self.x_range[1], self.basis_size, retstep=True)
         length = step / 2
         dist = ((inputs[:, None, :] - node[None, :, None]) ** 2)

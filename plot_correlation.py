@@ -19,5 +19,5 @@ BRR_corr_list = np.loadtxt("result/BRR/corr_list.txt")
 BLR_corr_list = np.loadtxt("result/BLR/corr_list.txt")
 BDNN_corr_list = np.array([np.loadtxt("result/BDNN/corr.txt")])
 corr_list = [GP_corr_list,BRR_corr_list,BLR_corr_list,BDNN_corr_list]
-draw_result.draw_result_list(corr_list,"correlation",data_name_lists,color,models,fontsize,1)
+draw_result.draw_correlations(corr_list,"correlation",data_name_lists,color,models,fontsize,1)
 plt.savefig("result/correlation_error.pdf", bbox_inches="tight")

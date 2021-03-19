@@ -8,7 +8,7 @@ class active_BRR(object):
         self.beta = beta
         self.alpha = alpha
         self.basis_size = basis_size
-        self.basis_func = self.Additive_RBF_function
+        self.basis_func = self.additive_RBF_function
         self.x_range = x_range
 
     def fit(self,X,y,fix_hyper_param=True,iterate_num=10):
@@ -28,7 +28,7 @@ class active_BRR(object):
                 self.beta = (Phi.shape[0]-gamma)/(np.linalg.norm(y-Phi @ self.W)**2)
 
     def predict(self, X_ast,return_std=True):
-        Phi_ast = self.Additive_RBF_function(X_ast)
+        Phi_ast = self.additive_RBF_function(X_ast)
         if not return_std:
             mu = Phi_ast @ self.W
             return mu
@@ -38,7 +38,7 @@ class active_BRR(object):
             return [mu,std]
 
     def get_var(self, X_ast):
-        Phi_ast = self.Additive_RBF_function(X_ast)
+        Phi_ast = self.additive_RBF_function(X_ast)
         var = np.einsum("ik,kl,il->i",Phi_ast,self.S,Phi_ast)
         return var
 
@@ -53,7 +53,7 @@ class active_BRR(object):
         index = pool_indecies[np.argmax(var)]
         return index
 
-    def Additive_RBF_function(self,inputs):
+    def additive_RBF_function(self,inputs):
         [node, step] = np.linspace(self.x_range[0], self.x_range[1], self.basis_size, retstep=True)
         length = step / 2
         dist = ((inputs[:, None, :] - node[None, :, None]) ** 2)
