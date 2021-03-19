@@ -2,54 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d979c69-898a-4712-9013-a746a7acb275" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/batch_bald/main_mnist_bk.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/draw_result.py" beforeDir="false" afterPath="$PROJECT_DIR$/draw_result.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/active_BLR.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/active_BLR.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plot_correlation.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_correlation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BDNN/BDNN_correlation_MNIST.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/BDNN/BDNN_correlation_MNIST.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BDNN/BDNN_epsilon_MNIST.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/BDNN/BDNN_epsilon_MNIST.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BLR/BLR_correlation_HTRU2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/BLR/BLR_correlation_HTRU2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BLR/BLR_correlation_grid_stability_c.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/BLR/BLR_correlation_grid_stability_c.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BLR/BLR_correlation_skin.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/BLR/BLR_correlation_skin.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BLR/BLR_criterion_HTRU2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/BLR/BLR_criterion_HTRU2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BLR/BLR_criterion_grid_stability_c.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/BLR/BLR_criterion_grid_stability_c.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BLR/BLR_criterion_skin.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/BLR/BLR_criterion_skin.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BLR/BLR_gene_error_HTRU2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/BLR/BLR_gene_error_HTRU2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BLR/BLR_gene_error_grid_stability_c.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/BLR/BLR_gene_error_grid_stability_c.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BLR/BLR_gene_error_skin.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/BLR/BLR_gene_error_skin.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BLR/corr_list.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/BLR/corr_list.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BRR/BRR_correlation_gas_emission.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/BRR/BRR_correlation_gas_emission.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BRR/BRR_correlation_grid_stability.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/BRR/BRR_correlation_grid_stability.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BRR/BRR_correlation_power_plant.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/BRR/BRR_correlation_power_plant.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BRR/BRR_correlation_protein.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/BRR/BRR_correlation_protein.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BRR/BRR_criterion_gas_emission.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/BRR/BRR_criterion_gas_emission.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BRR/BRR_criterion_grid_stability.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/BRR/BRR_criterion_grid_stability.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BRR/BRR_criterion_power_plant.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/BRR/BRR_criterion_power_plant.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BRR/BRR_criterion_protein.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/BRR/BRR_criterion_protein.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BRR/BRR_gene_error_gas_emission.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/BRR/BRR_gene_error_gas_emission.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BRR/BRR_gene_error_grid_stability.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/BRR/BRR_gene_error_grid_stability.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BRR/BRR_gene_error_power_plant.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/BRR/BRR_gene_error_power_plant.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BRR/BRR_gene_error_protein.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/BRR/BRR_gene_error_protein.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BRR/corr_list.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/BRR/corr_list.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/GPR/GPR_correlation_gas_emission.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/GPR/GPR_correlation_gas_emission.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/GPR/GPR_correlation_grid_stability.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/GPR/GPR_correlation_grid_stability.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/GPR/GPR_correlation_power_plant.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/GPR/GPR_correlation_power_plant.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/GPR/GPR_correlation_protein.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/GPR/GPR_correlation_protein.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/GPR/GPR_criterion_gas_emission.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/GPR/GPR_criterion_gas_emission.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/GPR/GPR_criterion_grid_stability.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/GPR/GPR_criterion_grid_stability.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/GPR/GPR_criterion_power_plant.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/GPR/GPR_criterion_power_plant.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/GPR/GPR_criterion_protein.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/GPR/GPR_criterion_protein.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/GPR/GPR_gene_error_gas_emission.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/GPR/GPR_gene_error_gas_emission.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/GPR/GPR_gene_error_grid_stability.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/GPR/GPR_gene_error_grid_stability.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/GPR/GPR_gene_error_power_plant.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/GPR/GPR_gene_error_power_plant.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/GPR/GPR_gene_error_protein.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/GPR/GPR_gene_error_protein.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/GPR/corr_list.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/GPR/corr_list.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/correlation_error.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/correlation_error.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_BDNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_BDNN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_BLR.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_BLR.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_BRR.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_BRR.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stopping_criteria.py" beforeDir="false" afterPath="$PROJECT_DIR$/stopping_criteria.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -129,14 +82,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="135">
-                <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+              <first_editor relative-caret-position="315">
+                <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/run_BDNN.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="214" column="5" lean-forward="true" selection-start-line="214" selection-start-column="5" selection-end-line="214" selection-end-column="5" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -158,17 +123,6 @@
             <state>
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run_BRR.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -457,10 +411,20 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="135">
-            <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <first_editor relative-caret-position="315">
+            <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_BDNN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="214" column="5" lean-forward="true" selection-start-line="214" selection-start-column="5" selection-end-line="214" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
