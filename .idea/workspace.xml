@@ -2,43 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d979c69-898a-4712-9013-a746a7acb275" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dataset/mnist_data/MNIST/processed/test.pt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/mnist_data/MNIST/processed/training.pt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/mnist_data/MNIST/raw/t10k-images-idx3-ubyte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/mnist_data/MNIST/raw/t10k-images-idx3-ubyte.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/mnist_data/MNIST/raw/t10k-labels-idx1-ubyte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/mnist_data/MNIST/raw/t10k-labels-idx1-ubyte.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/mnist_data/MNIST/raw/train-images-idx3-ubyte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/mnist_data/MNIST/raw/train-images-idx3-ubyte.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/mnist_data/MNIST/raw/train-labels-idx1-ubyte" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dataset/mnist_data/MNIST/raw/train-labels-idx1-ubyte.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/draw_result.py" beforeDir="false" afterPath="$PROJECT_DIR$/draw_result.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/active_BLR.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/active_BLR.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/active_BRR.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/active_BRR.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/plot_correlation.py" beforeDir="false" afterPath="$PROJECT_DIR$/plot_correlation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BDNN/BDNN_epsilon.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/BDNN/BDNN_LOSS_MNIST.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/BDNN/BDNN_MSE_MNIST.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/BDNN/BDNN_accuracy_MNIST.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/BDNN/BDNN_correlation_MNIST.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/BDNN/BDNN_correlation_MNIST.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/BDNN/BDNN_epsilon_MNIST.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/BDNN/BDNN_epsilon_MNIST.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/BDNN/BDNN_gene_error.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/result/BDNN/BDNN_gene_error_MNIST.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/BDNN/BDNN_gene_error_MNIST.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BDNN/backup/BDNN_LOSS_MNIST.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BDNN/backup/BDNN_MSE_MNIST.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BDNN/backup/BDNN_accuracy_MNIST.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BDNN/backup/BDNN_correlation_MNIST.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BDNN/backup/BDNN_epsilon_MNIST.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BDNN/backup/BDNN_upper_bound_MNIST.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BDNN/backup/R_lower.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BDNN/backup/R_upper.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BDNN/backup/accuracy.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BDNN/backup/corr.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BDNN/backup/lambda.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BDNN/backup/loss.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BDNN/backup/mse.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BDNN/backup/stop_timings_azuma.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BDNN/backup/stop_timings_azuma1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BDNN/backup/stop_timings_azuma2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/BDNN/backup/stop_timings_azuma3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/BDNN/BDNN_upper_bound_MNIST.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/BDNN/R_lower.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/BDNN/R_lower.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/BDNN/R_upper.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/BDNN/R_upper.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/BDNN/accuracy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/BDNN/accuracy.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/BDNN/corr.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/BDNN/corr.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/BDNN/lambda.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/BDNN/lambda.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/BDNN/loss.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/BDNN/loss.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/BDNN/mse.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/BDNN/mse.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/BDNN/stop_timings_azuma.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/BDNN/stop_timings_azuma1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/result/BDNN/stop_timings_azuma1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/BLR/BLR_correlation_HTRU2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/BLR/BLR_correlation_HTRU2.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/BLR/BLR_correlation_grid_stability_c.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/BLR/BLR_correlation_grid_stability_c.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/BLR/BLR_correlation_skin.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/BLR/BLR_correlation_skin.pdf" afterDir="false" />
@@ -72,8 +55,6 @@
       <change beforePath="$PROJECT_DIR$/result/GPR/GPR_gene_error_grid_stability.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/GPR/GPR_gene_error_grid_stability.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/GPR/GPR_gene_error_power_plant.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/GPR/GPR_gene_error_power_plant.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/GPR/GPR_gene_error_protein.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/GPR/GPR_gene_error_protein.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/correlation_error.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/fig_GP_test2.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/run_BDNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_BDNN.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run_BLR.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_BLR.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run_BRR.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_BRR.py" afterDir="false" />
@@ -89,22 +70,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run_BLR.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="86" column="26" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stopping_criteria.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="43" column="43" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
+            <state relative-caret-position="1665">
+              <caret line="111" column="17" selection-start-line="111" selection-start-column="17" selection-end-line="111" selection-end-column="17" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -115,17 +84,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run_BRR.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run_GPR.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="91" column="63" selection-start-line="91" selection-start-column="63" selection-end-line="91" selection-end-column="63" />
+            <state relative-caret-position="-710">
+              <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -134,10 +94,58 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/run_BLR.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/draw_result.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="58" column="61" selection-start-line="58" selection-start-column="61" selection-end-line="58" selection-end-column="61" />
+            <state relative-caret-position="1080">
+              <caret line="72" selection-start-line="72" selection-end-line="72" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/run_GPR.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-830">
+              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#30#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/get_dataset.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="82" selection-start-line="82" selection-end-line="82" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plot_correlation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
@@ -148,7 +156,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
+            <state relative-caret-position="930">
               <caret line="62" selection-start-line="62" selection-end-line="62" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -158,37 +166,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.pyenv/versions/anaconda3-2019.10/lib/python3.7/site-packages/matplotlib/pyplot.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="2841" selection-start-line="2841" selection-end-line="2841" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/result/BDNN/loss.txt">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.pyenv/versions/anaconda3-2019.10/lib/python3.7/site-packages/matplotlib/axes/_axes.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="1742" selection-start-line="1742" selection-end-line="1742" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.pyenv/versions/anaconda3-2019.10/lib/python3.7/site-packages/matplotlib/axes/_base.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="398" selection-start-line="398" selection-end-line="398" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run_BDNN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="39" column="50" lean-forward="true" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
+            <state relative-caret-position="-1066">
+              <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -203,9 +189,20 @@
       <find>additive_RBF_function</find>
       <find>Additive_RBF_function</find>
       <find>acquisition_size</find>
+      <find>draw_result_list</find>
       <find>criterion</find>
       <find>criteria</find>
-      <find>draw_result_list</find>
+      <find>Error</find>
+      <find>acc</find>
+      <find>label</find>
+      <find>seed</find>
+      <find>scheduling</find>
+      <find>Er</find>
+      <find>protein</find>
+      <find>Generalization</find>
+      <find>font_size</find>
+      <find>draw_correlation</find>
+      <find>sca</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -215,22 +212,22 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/plot_correlation.py" />
         <option value="$PROJECT_DIR$/model/active_BRR.py" />
         <option value="$PROJECT_DIR$/model/active_BLR.py" />
         <option value="$PROJECT_DIR$/stopping_criteria.py" />
+        <option value="$PROJECT_DIR$/draw_result.py" />
+        <option value="$PROJECT_DIR$/run_GPR.py" />
         <option value="$PROJECT_DIR$/run_BRR.py" />
         <option value="$PROJECT_DIR$/run_BLR.py" />
-        <option value="$PROJECT_DIR$/run_GPR.py" />
-        <option value="$PROJECT_DIR$/draw_result.py" />
         <option value="$PROJECT_DIR$/run_BDNN.py" />
+        <option value="$PROJECT_DIR$/plot_correlation.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="144" />
     <option name="width" value="1680" />
-    <option name="height" value="949" />
+    <option name="height" value="960" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -244,17 +241,6 @@
             <path>
               <item name="stopping_AL" type="b2602c69:ProjectViewProjectNode" />
               <item name="stopping_AL" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stopping_AL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stopping_AL" type="462c0819:PsiDirectoryNode" />
-              <item name="result" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="stopping_AL" type="b2602c69:ProjectViewProjectNode" />
-              <item name="stopping_AL" type="462c0819:PsiDirectoryNode" />
-              <item name="result" type="462c0819:PsiDirectoryNode" />
-              <item name="BDNN" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -277,8 +263,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.run_BDNN">
-    <configuration name="active_BLR" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.plot_correlation">
+    <configuration name="plot_correlation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="stopping_AL" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -286,11 +272,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/model" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model/active_BLR.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plot_correlation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -403,16 +389,16 @@
       <item itemvalue="Python.run_BLR" />
       <item itemvalue="Python.run_BRR" />
       <item itemvalue="Python.run_GPR" />
+      <item itemvalue="Python.plot_correlation" />
       <item itemvalue="Python tests.pytest in run_BDNN.py" />
-      <item itemvalue="Python.active_BLR" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.plot_correlation" />
         <item itemvalue="Python tests.pytest in run_BDNN.py" />
         <item itemvalue="Python.run_GPR" />
         <item itemvalue="Python.run_BLR" />
         <item itemvalue="Python.run_BRR" />
-        <item itemvalue="Python.active_BLR" />
       </list>
     </recent_temporary>
   </component>
@@ -448,17 +434,29 @@
     <history-entry file="pytest_in_run_BDNN_py - 2021.03.19 at 14h 19m 00s.xml">
       <configuration name="pytest in run_BDNN.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="pytest_in_run_BDNN_py - 2021.03.20 at 10h 32m 12s.xml">
+      <configuration name="pytest in run_BDNN.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_run_BDNN_py - 2021.03.22 at 18h 29m 18s.xml">
+      <configuration name="pytest in run_BDNN.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_run_BDNN_py - 2021.04.05 at 04h 55m 37s.xml">
+      <configuration name="pytest in run_BDNN.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_run_BDNN_py - 2021.04.05 at 04h 58m 06s.xml">
+      <configuration name="pytest in run_BDNN.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="958" extended-state="6" />
+    <frame x="0" y="144" width="1680" height="960" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.123931624" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13003664" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32794458" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32603687" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -541,16 +539,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plot_correlation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/model/active_BLR.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-262">
@@ -568,33 +556,75 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$USER_HOME$/.pyenv/versions/anaconda3-2019.10/lib/python3.7/site-packages/matplotlib/axes/_axes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
+        <state relative-caret-position="25620">
           <caret line="1742" selection-start-line="1742" selection-end-line="1742" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../stopping_AL_bk/get_dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="82" column="47" selection-start-line="82" selection-start-column="40" selection-end-line="82" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../stopping_AL_bk/dataset/CASP/CASP.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="57" lean-forward="true" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.pyenv/versions/anaconda3-2019.10/lib/python3.7/site-packages/numpy/lib/_datasource.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2835">
+          <caret line="194" selection-start-line="194" selection-end-line="194" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.pyenv/versions/anaconda3-2019.10/lib/python3.7/site-packages/matplotlib/axes/_base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
+        <state relative-caret-position="5565">
           <caret line="398" selection-start-line="398" selection-end-line="398" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/result/BDNN/corr.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/result/BDNN/lambda.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1018" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/stopping_criteria.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="43" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
+        <state relative-caret-position="1665">
+          <caret line="111" column="17" selection-start-line="111" selection-start-column="17" selection-end-line="111" selection-end-column="17" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/run_BLR.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
+        <state relative-caret-position="930">
           <caret line="62" selection-start-line="62" selection-end-line="62" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -602,37 +632,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/draw_result.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="58" column="61" selection-start-line="58" selection-start-column="61" selection-end-line="58" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/result/BDNN/loss.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_BLR.py">
+    <entry file="file://$PROJECT_DIR$/plot_correlation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="86" column="26" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run_BRR.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run_GPR.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="91" column="63" selection-start-line="91" selection-start-column="63" selection-end-line="91" selection-end-column="63" />
+        <state relative-caret-position="150">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
@@ -641,10 +647,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/run_BDNN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="39" column="50" lean-forward="true" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
+        <state relative-caret-position="-1066">
+          <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_BRR.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-710">
+          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_GPR.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-830">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/draw_result.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
           </folding>
         </state>
       </provider>

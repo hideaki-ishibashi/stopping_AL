@@ -12,7 +12,7 @@ class base_criterion(object):
         self.stop_timings = np.nan
 
 class error_stability_criterion(base_criterion):
-    def __init__(self,threshold,validate_size=10):
+    def __init__(self,threshold,validate_size=1):
         super(error_stability_criterion, self).__init__("Error stability={0}".format(threshold))
         self.error_ratio = np.empty(0,float)
         self.threshold = threshold

@@ -9,7 +9,7 @@ def draw_gene_error(test_error,criteria,initial_sample_size,batch_size,color,fon
     plt.figure(1,[8,5])
     plt.clf()
     sample_size_list = np.arange(batch_size+initial_sample_size,batch_size*(test_error.shape[0]+1)+initial_sample_size,batch_size)
-    plt.plot(sample_size_list, test_error, c='k', label="Generalization_error")
+    plt.plot(sample_size_list, test_error, c='k', label="Generalization error")
     for criterion in criteria:
         stopping_data_size = batch_size+initial_sample_size+criterion.stop_timings*batch_size
         plt.plot([stopping_data_size, stopping_data_size], [test_error.min(), test_error.max()], c=color[criterion.criterion_name],
@@ -23,7 +23,7 @@ def draw_gene_error(test_error,criteria,initial_sample_size,batch_size,color,fon
 
 
 def draw_correlations(result,y_label,data_names,color,label,fontsize=24,ylim=1):
-    plt.figure(4,[25,10])
+    fig = plt.figure(4,[25,10])
     plt.clf()
     plt.ylim(0, ylim)
     y_ticks = np.linspace(0,ylim,11)
@@ -36,11 +36,12 @@ def draw_correlations(result,y_label,data_names,color,label,fontsize=24,ylim=1):
         lefts.append(left)
     left = np.concatenate(lefts)
     data_names = list(itertools.chain.from_iterable(data_names))
-    plt.xticks(left, data_names,rotation=10)
+    plt.xticks(left, data_names)
+    fig.autofmt_xdate(rotation=20)
     plt.yticks(y_ticks)
     plt.ylabel(y_label,fontsize=fontsize)
     plt.tick_params(labelsize=fontsize)
-    plt.legend(fontsize=fontsize, loc='lower right')
+    plt.legend(fontsize=fontsize, loc='lower left')
     plt.tight_layout()
     plt.grid(axis='y', linestyle='dotted', color='k')
     plt.pause(0.01)

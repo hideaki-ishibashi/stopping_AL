@@ -16,6 +16,7 @@ def main():
     noise_level_bounds_list = [(1e-3, 1e3),(1e-3, 1e3),(1e-1, 1e3),(1e-1, 1e3),(1e-3, 1e3)]
     corr_list = np.zeros((len(data_names)))
     fontsize = 24
+    fontsize_corr = 40
     batch_size = 1
 
     for i,data_name in enumerate(data_names):
@@ -84,7 +85,7 @@ def main():
         draw_result.draw_gene_error(test_error, criteria, init_sample_size,batch_size,color, fontsize)
         plt.tight_layout()
         plt.savefig(save_dir+"GPR_gene_error_"+data_name+".pdf")
-        draw_result.draw_correlation(test_error[validate_size:], error_stability1.error_ratio[validate_size:], "GPR", "r", fontsize)
+        draw_result.draw_correlation(test_error[validate_size:], error_stability1.error_ratio[validate_size:], "GPR", "r", fontsize_corr)
         plt.tight_layout()
         plt.savefig(save_dir+"GPR_correlation_"+data_name+".pdf")
         draw_result.draw_epsilon(criteria, init_sample_size,batch_size,color, fontsize)
@@ -95,6 +96,8 @@ def main():
         corr_list[i] = np.corrcoef(test_error[validate_size:][indecies], error_stability1.error_ratio[validate_size:][indecies])[1, 0]
 
     np.savetxt(save_dir+"corr_list.txt",corr_list)
+    np.savetxt(save_dir+"loss.txt",np.array(test_error))
+    np.savetxt(save_dir+"lambda.txt",error_stability1.error_ratio)
 
 if __name__ == "__main__":
     main()

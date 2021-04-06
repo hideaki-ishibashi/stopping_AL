@@ -62,6 +62,7 @@ os.makedirs(data_dir, exist_ok=True)
 scheduling = eval(args.scheduling)
 num_class = 10
 font_size = 24
+font_size_corr = 40
 
 
 def generate_full_dataset():
@@ -76,16 +77,19 @@ def modify_dataset(train_dataset, indices):
 
 
 # consistent initial data points based on seed value
+torch.manual_seed(args.seed)
+torch.cuda.manual_seed_all(args.seed)
+np.random.seed(args.seed)
 train_dataset = generate_full_dataset()
 print(type(train_dataset))
 total_size = len(train_dataset)
-indices = np.random.RandomState(seed=args.seed).permutation(total_size)[:args.initial_size]
+indices = np.random.permutation(total_size)[:args.initial_size]
 print('md5 of initial data points: {}'.format(hashlib.md5(str(indices).encode('utf-8')).hexdigest()))
 train_dataset = modify_dataset(train_dataset, indices)
 train_loader = torch.utils.data.DataLoader(train_dataset, batch_size=train_batch_size, shuffle=True)
 
 test_dataset = datasets.MNIST(data_dir, train=False,transform=transforms.Compose([transforms.ToTensor(),]))
-test_indices = np.random.RandomState(seed=args.seed).permutation(len(test_dataset))[:args.test_size]
+test_indices = np.random.permutation(len(test_dataset))[:args.test_size]
 test_dataset = modify_dataset(test_dataset, test_indices)
 test_loader = torch.utils.data.DataLoader(test_dataset, batch_size=test_batch_size, shuffle=False)
 
@@ -232,7 +236,7 @@ np.savetxt(save_dir+"corr.txt",np.array([corr]))
 
 print(test_loss_list[indecies].shape)
 print(error_stability1.error_ratio[indecies].shape)
-draw_result.draw_correlation(test_loss_list, error_stability1.error_stability,indecies,"purple")
+draw_result.draw_correlation(test_loss_list, error_stability1.error_ratio,"BDNN","purple",font_size_corr)
 plt.tight_layout()
 plt.savefig(save_dir+"BDNN_correlation_MNIST.pdf")
 
