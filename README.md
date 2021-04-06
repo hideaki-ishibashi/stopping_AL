@@ -1,6 +1,6 @@
 # stopping Active Learning
 
-This is the code for our paper [Error Stability-based stopping criterion for active learning]().
+This is the code for our paper [Stopping criterion for active learning based on error stability]().
 
 Please cite us:
 
