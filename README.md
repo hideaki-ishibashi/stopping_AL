@@ -11,7 +11,7 @@ Please cite us:
       year={2021},
       eprint={2104.01836},
       archivePrefix={arXiv},
-      primaryClass={cs.LG}
+      primaryClass={stat.ML}
 }
 ```
 
