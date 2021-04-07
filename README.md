@@ -1,10 +1,18 @@
 # stopping Active Learning
 
-This is the code for our paper [Stopping criterion for active learning based on error stability]().
+This is the code for our paper [Stopping criterion for active learning based on error stability](https://arxiv.org/abs/2104.01836).
 
 Please cite us:
 
 ```
+@misc{ishibashi2021,
+      title={Stopping criterion for active learning based on error stability}, 
+      author={H. Ishibashi and H. Hino},
+      year={2021},
+      eprint={2104.01836},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
 ```
 
 ## How to run it
